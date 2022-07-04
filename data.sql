@@ -6,8 +6,7 @@ INSERT INTO animals(
     weight_kg,
     neutered,
     escape_attempts
-  )
-VALUES(1, 'Agumon', '2020-02-03', 10.23, TRUE, 0);
+  ) VALUES(1, 'Agumon', '2020-02-03', 10.23, TRUE, 0);
 INSERT INTO animals(
     id,
     name,
@@ -34,5 +33,4 @@ INSERT INTO animals(
     neutered,
     escape_attempts
   )
-VALUES(4, 'Devimon', '20
-17-05-12', 11, TRUE, 5);
+VALUES(4, 'Devimon', '2017-05-12', 11, TRUE, 5);
