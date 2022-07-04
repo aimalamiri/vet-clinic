@@ -5,5 +5,6 @@ CREATE TABLE animals (
     date_of_birth date NOT NULL,
     escape_attempts INT,
     neutered BOOLEAN NOT NULL,
-    weight_kg NUMERIC(4, 2) NOT NULL
+    weight_kg NUMERIC(4, 2) NOT NULL,
+    PRIMARY KEY(id)
 );
