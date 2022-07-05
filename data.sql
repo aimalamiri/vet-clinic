@@ -50,7 +50,7 @@ VALUES(
     '2020-02-08',
     0,
     FALSE,
-    11,
+    -11,
     null
   );
 INSERT INTO animals (
@@ -62,7 +62,7 @@ INSERT INTO animals (
     weight_kg,
     species
   )
-VALUES(6, 'Plantmon', '2021-11-15', 2, TRUE, 5.7, null);
+VALUES(6, 'Plantmon', '2021-11-15', 2, TRUE, -5.7, null);
 INSERT INTO animals (
     id,
     name,
@@ -78,7 +78,7 @@ VALUES(
     '1993-04-02',
     3,
     FALSE,
-    12.13,
+    -12.13,
     null
   );
 INSERT INTO animals (
