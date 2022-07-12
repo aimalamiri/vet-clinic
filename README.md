@@ -2,6 +2,8 @@
 
 This repository contains the sql query files for the Vet Clinic database. These queries are tested in PostgresSQL, and you can prepare it for MYSQL and MS SQL as well with some minor changes.
 
+![Diagram](diagram/db_diagram.png)
+
 ## Getting Started
 
 This repository includes files with plain SQL that can be used to recreate a database:
