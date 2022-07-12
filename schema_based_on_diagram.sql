@@ -19,3 +19,26 @@ CREATE TABLE invoices (
   medical_history_id INT,
   CONSTRAINT fk_medical_history_id FOREIGN KEY(medical_history_id) REFERENCES medical_histories(id)
 );
+
+CREATE TABLE treatments (
+id SERIAL PRIMARY KEY,
+type VARCHAR,
+name VARCHAR);
+
+CREATE TABLE invoice_items (
+id SERIAL PRIMARY KEY,
+unit_price DECIMAL,
+quantity INT,
+total_price DECIMAL,
+invoice_id INT,
+treatment_id INT,
+CONSTRAINT fk_invoice_id FOREIGN KEY(invoice_id) REFERENCES invoices(id),
+CONSTRAINT fk_treatment_id FOREIGN KEY(treatment_id) REFERENCES treatments(id)
+);
+
+CREATE TABLE treatment_histories (
+medical_history_id INT,
+treatment_id INT,
+CONSTRAINT fk_medical_history_id FOREIGN KEY(medical_history_id) REFERENCES medical_histories(id),
+CONSTRAINT fk_treatment_id FOREIGN KEY(treatment_id) REFERENCES treatments(id)
+);
